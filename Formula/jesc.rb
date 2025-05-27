@@ -5,21 +5,21 @@
 class Jesc < Formula
   desc "A simple CLI tool to deeply unescape nested escaped JSON strings inside JSON objects."
   homepage "https://github.com/fardhanardhi/jesc"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.3/jesc_Darwin_x86_64.tar.gz"
-      sha256 "45f45922a83208b09516e5c4935d071ecd8aadc90cb1699ac21c1e25fc5d47be"
+      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.4/jesc_Darwin_x86_64.tar.gz"
+      sha256 "e7468e9a448856af9a5fe0954ca450f59218a44bc9ae0fbd44f2951d1ffe7ece"
 
       def install
         bin.install "jesc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.3/jesc_Darwin_arm64.tar.gz"
-      sha256 "61f05ca090e2fb94015edaacd1a0b2ab19a44c787591120273dae4bdde71771d"
+      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.4/jesc_Darwin_arm64.tar.gz"
+      sha256 "1dfe8a8c171710e568ff0f5e6a82d804616ca5f3011e667a1edd0db65a769358"
 
       def install
         bin.install "jesc"
@@ -29,15 +29,15 @@ class Jesc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.3/jesc_Linux_x86_64.tar.gz"
-      sha256 "6a6ef047f16c22076edaf4dd6b4e7d928a6bbd8a1ce42298d831e0304280293f"
+      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.4/jesc_Linux_x86_64.tar.gz"
+      sha256 "9c42e93ae0c4bf517b35972513d069a374f8e4d47eabfac8f42a0f8d3c40cd7e"
       def install
         bin.install "jesc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.3/jesc_Linux_arm64.tar.gz"
-      sha256 "5a26f824d9f642f8f43920841206e1356f2aba65a20fe8d06f9bb3aa1ed9d1c8"
+      url "https://github.com/fardhanardhi/jesc/releases/download/v0.1.4/jesc_Linux_arm64.tar.gz"
+      sha256 "63eb7ee3714210fdfd55ca38be349c9d2fca82d47df838d6dce00ebe50139ce9"
       def install
         bin.install "jesc"
       end
